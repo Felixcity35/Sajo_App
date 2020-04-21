@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Notifications"
+    android:fitsSystemWindows="true"
+    android:background="#F4F4F4">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/colorSurface"
+            app:menu="@menu/top_app_bar"
+            app:title="Notifications"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="70dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp">
+
+        <TextView
+            android:layout_width="323dp"
+            android:layout_height="46dp"
+            android:text="You got accepted to attend NYA Meetup"
+            android:drawableEnd="@drawable/ic_star"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/posts_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

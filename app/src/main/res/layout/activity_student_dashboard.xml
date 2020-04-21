@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StudentDashboardActivity"
+    android:fitsSystemWindows="true"
+    android:background="#F4F4F4">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/colorSurface"
+            app:menu="@menu/top_app_bar"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/open_sans"
+                android:paddingTop="10dp"
+                android:text="@string/categories"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="122dp"
+                        android:layout_height="29dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/catshape">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/quicksand_light"
+                            android:gravity="center_horizontal"
+                            android:text="@string/intern"
+                            android:textSize="17sp"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+                    </RelativeLayout>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="122dp"
+                        android:layout_height="29dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/catshape">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/quicksand_light"
+                            android:gravity="center_horizontal"
+                            android:text="@string/train"
+                            android:textSize="17sp"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="122dp"
+                        android:layout_height="29dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/catshape">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/quicksand_light"
+                            android:gravity="center_horizontal"
+                            android:text="@string/tech"
+                            android:textSize="17sp"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+                    </RelativeLayout>
+                </LinearLayout>
+        </LinearLayout>
+            </ScrollView>
+
+            <RelativeLayout
+                android:background="F9F7F7"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent">
+
+                <LinearLayout
+                    android:background="@color/colorAccent"
+                    android:id="@+id/featured_background"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="180dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:fontFamily="@font/open_sans"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_width="wrap_content"
+                        android:text="@string/opportunities_for_you"
+                        android:textAllCaps="true"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:textColor="#fff"
+                        android:text="@string/welcome_to_sajo_and_description"
+                        android:fontFamily="@font/quicksand_light"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/posts_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="62dp"
+                android:layout_marginEnd="0dp"
+                android:background="#FFFFFF"
+                app:menu="@menu/bottom_nav_menu" />
+</FrameLayout>
+
+</LinearLayout>

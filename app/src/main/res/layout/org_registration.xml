@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="LoginTheme">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo1"
+            android:layout_width="116dp"
+            android:layout_height="84dp"
+            app:srcCompat="@drawable/sajologo"
+            android:contentDescription="@string/logo" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-28dp"
+            android:layout_toEndOf="@id/logo1"
+            android:fontFamily="@font/open_sans"
+            android:paddingTop="20dp"
+            android:text="@string/register"
+            android:textAlignment="viewEnd"
+            android:textColor="@android:color/black"
+            android:textSize="35sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/org_name"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:autofillHints="Wizzy Brains"
+            android:fontFamily="@font/quicksand_light"
+            android:hint="@string/name_of_organisation_or_company"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#161515"
+            android:textColorHint="#C4C4C4"
+            android:textSize="17sp" tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/org_email"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:autofillHints="wizzybrains@example.com"
+            android:fontFamily="@font/quicksand_light"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="#fff"
+            android:textColorHint="#C4C4C4"
+            android:textSize="17sp" tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/org_password"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:autofillHints="*******"
+            android:fontFamily="@font/quicksand_light"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingTop="17dp"
+            android:textColor="#fff"
+            android:textColorHint="#C4C4C4"
+            android:textSize="17sp" tools:targetApi="o" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:background="@drawable/org_description"
+            android:hint="Brief description about what you do."
+            android:textColor="#000000"
+            android:textColorHint="#C4C4C4"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="136dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_style"
+        android:layout_gravity="center"
+        android:text="@string/sign_up"
+        android:textColor="#fff" />
+</LinearLayout>

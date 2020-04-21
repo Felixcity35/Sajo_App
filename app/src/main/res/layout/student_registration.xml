@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="LoginTheme">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <ImageView
+           android:id="@+id/logo1"
+           android:layout_width="116dp"
+           android:layout_height="84dp"
+           app:srcCompat="@drawable/sajologo"
+           android:contentDescription="@string/logo" />
+
+       <TextView
+           android:id="@+id/register"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="-28dp"
+           android:layout_toEndOf="@id/logo1"
+           android:fontFamily="@font/open_sans"
+           android:paddingTop="20dp"
+           android:text="@string/register"
+           android:textAlignment="viewEnd"
+           android:textColor="@android:color/black"
+           android:textSize="35sp" />
+   </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/student_name"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:autofillHints="Jane Doe"
+            android:fontFamily="@font/quicksand_light"
+            android:hint="@string/full_name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#161515"
+            android:textColorHint="#C4C4C4"
+            android:textSize="17sp"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/student_email"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:autofillHints="janedoe@example.com"
+            android:fontFamily="@font/quicksand_light"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="#fff"
+            android:textColorHint="#C4C4C4"
+            android:textSize="17sp"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/student_password"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:autofillHints="*******"
+            android:fontFamily="@font/quicksand_light"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingTop="17dp"
+            android:textColor="#fff"
+            android:textColorHint="#C4C4C4"
+            android:textSize="17sp"
+            tools:targetApi="o" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <RadioButton
+                android:id="@+id/student_gender1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:fontFamily="@font/quicksand_light"
+                android:paddingStart="0dp"
+                android:paddingEnd="35dp"
+                android:text="@string/male"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/student_gender2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:fontFamily="@font/quicksand_light"
+                android:text="@string/female"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/your_interests"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:drawableStart="@drawable/ic_hands_helping_solid"
+            android:drawablePadding="10dp"
+            android:text="@string/volunteering"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:drawableStart="@drawable/ic_intern"
+            android:drawablePadding="10dp"
+            android:text="@string/internships"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:drawableStart="@drawable/ic_event"
+            android:drawablePadding="10dp"
+            android:text="@string/events_around_you"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:drawableStart="@drawable/ic_school_solid"
+            android:drawablePadding="10dp"
+            android:text="@string/school_scholarships"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:drawableStart="@drawable/ic_medal"
+            android:drawablePadding="10dp"
+            android:text="@string/competitions"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:drawableStart="@drawable/ic_travel"
+            android:drawablePadding="10dp"
+            android:text="@string/travel_opportunities"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:drawableStart="@drawable/ic_art"
+            android:drawablePadding="10dp"
+            android:text="@string/opportunities_in_art"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:drawableStart="@drawable/ic_sport"
+            android:drawablePadding="10dp"
+            android:text="@string/opportunities_in_sport"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:drawableStart="@drawable/ic_code"
+            android:drawablePadding="10dp"
+            android:text="@string/opportunities_in_tech"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:drawableStart="@drawable/ic_training"
+            android:drawablePadding="10dp"
+            android:text="@string/trainings"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <Button
+            android:layout_width="136dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_style"
+            android:layout_gravity="center"
+            android:text="@string/sign_up"
+            android:textColor="#fff" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
