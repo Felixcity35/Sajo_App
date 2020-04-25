@@ -117,7 +117,7 @@
             </ScrollView>
 
             <RelativeLayout
-                android:background="F9F7F7"
+                android:background="#F9F7F7"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"

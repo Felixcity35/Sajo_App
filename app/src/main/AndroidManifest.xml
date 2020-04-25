@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FeedbackActivity"></activity>
+        <activity android:name=".organisationActivity"></activity>
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".FeedbackActivity" />
         <activity android:name=".SavedPostActivity" />
         <activity android:name=".Notifications" />
         <activity android:name=".AboutActivity" />
@@ -18,9 +20,9 @@
             android:name=".StudentDashboardActivity"
             android:label="@string/title_activity_student_dashboard" />
         <activity
-            android:name=".ui.login.LoginActivity"
+            android:name=".MainActivity"
             android:label="@string/title_activity_login" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

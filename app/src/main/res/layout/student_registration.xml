@@ -46,8 +46,6 @@
             android:hint="@string/full_name"
             android:inputType="text"
             android:maxLines="1"
-            android:textColor="#161515"
-            android:textColorHint="#C4C4C4"
             android:textSize="17sp"
             tools:targetApi="o" />
 
@@ -60,8 +58,6 @@
             android:hint="@string/email_address"
             android:inputType="textEmailAddress"
             android:maxLines="1"
-            android:textColor="#fff"
-            android:textColorHint="#C4C4C4"
             android:textSize="17sp"
             tools:targetApi="o" />
 
@@ -75,8 +71,6 @@
             android:inputType="textPassword"
             android:maxLines="1"
             android:paddingTop="17dp"
-            android:textColor="#fff"
-            android:textColorHint="#C4C4C4"
             android:textSize="17sp"
             tools:targetApi="o" />
 
@@ -234,6 +228,7 @@
             android:textSize="20sp"/>
 
         <Button
+            android:id="@+id/signup"
             android:layout_width="136dp"
             android:layout_height="46dp"
             android:layout_marginTop="15dp"

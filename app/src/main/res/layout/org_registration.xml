@@ -87,6 +87,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/signup"
         android:layout_width="136dp"
         android:layout_height="46dp"
         android:layout_marginTop="30dp"
