@@ -7,34 +7,46 @@
     tools:context=".FeedbackActivity"
     android:orientation="vertical">
 
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:menu="@menu/top_app_bar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        app:navigationIcon="@drawable/ic_arrow_back">
+    </androidx.appcompat.widget.Toolbar>
+
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="30dp"
-        app:srcCompat="@drawable/ic_review"
-        android:contentDescription="@string/feedback_image"/>
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/feedback_image"
+        app:srcCompat="@drawable/ic_review" />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/feedback_text"
-        android:padding="20dp"
-        android:textSize="20sp"
-        android:fontFamily="@font/quicksand_light"
         android:layout_gravity="center"
-        android:textColor="@color/colorOn"/>
+        android:fontFamily="@font/quicksand_light"
+        android:padding="20dp"
+        android:text="@string/feedback_text"
+        android:textColor="@color/colorOn"
+        android:textSize="20sp" />
 
     <EditText
         android:layout_width="350dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:layout_height="100dp"
         android:background="@drawable/comment_shape"
         android:drawableEnd="@drawable/ic_send"
         android:hint="@string/feedback_form"
+        android:importantForAutofill="no"
         android:inputType="text"
-        android:importantForAutofill="no" tools:targetApi="o"/>
+        tools:targetApi="o" />
 
 
 

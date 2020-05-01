@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateNewPostActivity"
+    android:orientation="vertical"
+    >
+
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    app:menu="@menu/top_app_bar"
+    style="@style/Widget.MaterialComponents.Toolbar.Primary"
+    app:navigationIcon="@drawable/ic_arrow_back">
+</androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/guide"
+        android:fontFamily="@font/open_sans"
+        android:textColor="@color/colorOn"
+        android:textSize="20sp"
+        android:padding="8dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_light"
+            android:text="@string/image_select"
+            android:textColor="@color/colorOn"
+            android:textSize="20sp"
+            android:padding="8dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/image1"
+            app:srcCompat="@drawable/ic_photo"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="20dp"
+            android:paddingStart="0dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/camera"
+           />
+
+
+
+        <EditText
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:inputType="text"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/type_here"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@color/colorGray"
+            android:importantForAutofill="no"
+            tools:targetApi="o" />
+
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="8dp">
+        <!--list item
+        Internship, Paid job, Volunteering, Event, Scholarship, Training, Competition-->
+    </Spinner>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/post"
+            android:fontFamily="@font/open_sans"
+            android:textSize="20sp"
+            android:drawableEnd="@drawable/ic_send"
+            android:drawablePadding="13dp"
+            android:textColor="@color/colorOn"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:fontFamily="@font/open_sans"
+            android:textSize="20sp"
+            android:drawableEnd="@drawable/ic_delete"
+            android:drawableTint="@color/colorPrimary"
+            android:drawablePadding="10dp"
+            android:textColor="@color/colorOn"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            tools:targetApi="m" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

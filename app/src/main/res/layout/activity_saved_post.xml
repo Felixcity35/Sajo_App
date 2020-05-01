@@ -4,35 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SavedPostActivity">
+    tools:context=".SavedPostActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:menu="@menu/top_app_bar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        app:title="Saved Posts"
+        app:titleTextColor="@color/colorSurface"
+        app:subtitleTextAppearance="15dp"
+        app:navigationIcon="@drawable/ic_arrow_back">
+    </androidx.appcompat.widget.Toolbar>
+
 
 
     <androidx.cardview.widget.CardView
-        android:layout_width="380dp"
+        android:layout_width="399dp"
         android:layout_height="71dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
         android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="70dp"
-        app:cardCornerRadius="5dp"
-        app:cardElevation="2dp">
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp">
 
-
-        <ImageView
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            app:srcCompat="@drawable/circled"/>
-
-        <TextView
-            android:id="@+id/postdetails"
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Name of organisation and brief description of the post."
-            android:paddingStart="10dp"
-            android:paddingEnd="0dp"
-            android:paddingTop="10dp"
-            android:textSize="17sp"
-            android:fontFamily="@font/quicksand_light"/>
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/orglogo"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:srcCompat="@drawable/circled"
+                android:layout_alignStart="@id/postdetails"/>
+
+            <TextView
+                android:id="@+id/postdetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_of_organisation_and_brief_description_of_the_post"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp"
+                android:paddingTop="10dp"
+                android:textSize="17sp"
+                android:fontFamily="@font/quicksand_light"/>
+
+        </RelativeLayout>
+
 
     </androidx.cardview.widget.CardView>
 

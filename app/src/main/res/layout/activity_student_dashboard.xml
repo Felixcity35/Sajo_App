@@ -11,23 +11,13 @@
     android:fitsSystemWindows="true"
     android:background="#F4F4F4">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="?attr/actionBarSize"
+        app:menu="@menu/top_app_bar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary">
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/topAppBar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:titleTextColor="@color/colorSurface"
-            app:menu="@menu/top_app_bar"
-            style="@style/Widget.MaterialComponents.Toolbar.Primary"
-            />
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-
-
+    </androidx.appcompat.widget.Toolbar>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,9 +33,7 @@
                 android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -97,6 +85,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
                     <RelativeLayout
                         android:layout_width="122dp"
                         android:layout_height="29dp"
@@ -108,13 +97,12 @@
                             android:fontFamily="@font/quicksand_light"
                             android:gravity="center_horizontal"
                             android:text="@string/tech"
-                            android:textSize="17sp"
                             android:textAlignment="center"
-                            android:textColor="#000000" />
+                            android:textColor="#000000"
+                            android:textSize="17sp" />
                     </RelativeLayout>
                 </LinearLayout>
         </LinearLayout>
-            </ScrollView>
 
             <RelativeLayout
                 android:background="#F9F7F7"
@@ -171,9 +159,8 @@
                 android:id="@+id/nav_view"
                 android:layout_width="278dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_marginStart="62dp"
-                android:layout_marginEnd="0dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="67dp"
                 android:background="#FFFFFF"
                 app:menu="@menu/bottom_nav_menu" />
 </FrameLayout>

@@ -17,7 +17,7 @@
             android:layout_weight="4"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/oval"
-            android:contentDescription="login_bg" />
+            android:contentDescription="@string/login_bg" />
         <View
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -58,6 +58,8 @@
             android:autofillHints="email"
             tools:targetApi="o"
             android:inputType="textEmailAddress"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
             />
 
         <EditText
@@ -77,7 +79,9 @@
             android:textColorHint="#C4C4C4"
             android:autofillHints="******"
             tools:targetApi="o"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"/>
 
         <ImageView
             android:id="@+id/loginbtn"

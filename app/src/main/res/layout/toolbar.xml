@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar android:id="@+id/topAppBar"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    app:titleTextColor="@color/colorSurface"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.MaterialComponents.Toolbar.Primary"
+    app:menu="@menu/top_app_bar">
+
+</androidx.appcompat.widget.Toolbar>

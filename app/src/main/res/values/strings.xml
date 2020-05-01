@@ -66,8 +66,28 @@
     <string name="post_title">McDonald\'s</string>
     <string name="title_desc">Post description goes here with link to the main post &#8230;</string>
     <string name="more">more</string>
-    <string name="our_aim">our aim.........................................</string>
+    <string name="our_aim">SAJO App helps high school graduates get easier access to opportunities from partnered organizations/companies, such as to grow their skills, experience and earn money. High school graduates can intern with, volunteer for, or work in person or remotely with an organization/company. Virtual and non-virtual training are also opened for them to learn soft and hard skills. Users without smartphones can freely subscribe on our website to get SMS messages on opportunities related to their interests.
+This is to build their portfolios, as well as their productivity skills.
+</string>
     <string name="feedback_text">This is a beta android version of sajo, we need your feedback to improve on or change some features, to ensure that you enjoy using sajo. Please do well to leave a feedback. Thank you!</string>
     <string name="feedback_image">conversation image</string>
     <string name="feedback_form">type your feedback here</string>
+    <string name="login_bg">login_bg</string>
+    <string name="conversation_image">conversation image</string>
+    <string name="image_select">Select an image from your device</string>
+    <string name="no_image">No image? type the first initial for the category your post is about.</string>
+    <string name="type_here">Type here</string>
+    <string name="post">Post</string>
+    <string name="delete">Delete</string>
+    <string name="guide">Create an easy to understand post. Include link to a form, survey or website if there\'s any. Is it a paid job? State your price and expectations.</string>
+    <string name="cancel">Cancel</string>
+    <string name="posts_by_you">posts by you</string>
+    <string name="name_of_organisation_and_brief_description_of_the_post">Name of organisation and brief description of the post.</string>
+    <string name="older_posts_view">older posts view</string>
+    <string name="post_views">post views</string>
+    <string name="_123">123</string>
+    <string name="delete_post">delete post</string>
+    <string name="orglogo">orglogo</string>
+    <string name="bglogo">bglogo</string>
+    <string name="camera">camera</string>
 </resources>

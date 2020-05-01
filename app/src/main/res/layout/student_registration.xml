@@ -29,13 +29,8 @@
            android:textColor="@android:color/black"
            android:textSize="35sp" />
    </RelativeLayout>
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+
+
 
         <EditText
             android:id="@+id/student_name"
@@ -47,6 +42,8 @@
             android:inputType="text"
             android:maxLines="1"
             android:textSize="17sp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
             tools:targetApi="o" />
 
         <EditText
@@ -59,6 +56,8 @@
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:textSize="17sp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
             tools:targetApi="o" />
 
         <EditText
@@ -72,6 +71,8 @@
             android:maxLines="1"
             android:paddingTop="17dp"
             android:textSize="17sp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
             tools:targetApi="o" />
 
         <RadioGroup
@@ -117,7 +118,16 @@
             android:textStyle="bold"
             android:textColor="@android:color/black"/>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
         <TextView
+            android:id="@+id/volunteering"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -128,6 +138,10 @@
             android:textColor="#000000"
             android:textSize="20sp"
             />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+            <!--android:layout_alignParentEnd="true"-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -139,17 +153,25 @@
             android:textColor="#000000"
             android:textSize="20sp"
             />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                /> <!--android:layout_alignParentEnd="true"-->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:padding="5dp"
             android:drawableStart="@drawable/ic_event"
             android:drawablePadding="10dp"
+            android:padding="5dp"
             android:text="@string/events_around_you"
             android:textColor="#000000"
-            android:textSize="20sp"
-            />
+            android:textSize="20sp" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+          /> <!--android:layout_alignParentEnd="true"-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -161,6 +183,11 @@
             android:textColor="#000000"
             android:textSize="20sp"
             />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                /> <!--android:layout_alignParentEnd="true"-->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -172,6 +199,11 @@
             android:textColor="#000000"
             android:textSize="20sp"
             />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                /> <!--android:layout_alignParentEnd="true"-->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -183,6 +215,11 @@
             android:textColor="#000000"
             android:textSize="20sp"
             />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                /> <!--android:layout_alignParentEnd="true"-->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -194,6 +231,11 @@
             android:textColor="#000000"
             android:textSize="20sp"
             />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                /> <!--android:layout_alignParentEnd="true"-->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -205,6 +247,11 @@
             android:textColor="#000000"
             android:textSize="20sp"
             />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                /> <!--android:layout_alignParentEnd="true"-->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -216,6 +263,11 @@
             android:textColor="#000000"
             android:textSize="20sp"
             />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                /> <!--android:layout_alignParentEnd="true"-->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -226,16 +278,24 @@
             android:text="@string/trainings"
             android:textColor="#000000"
             android:textSize="20sp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                /> <!--android:layout_alignParentEnd="true"-->
 
-        <Button
-            android:id="@+id/signup"
-            android:layout_width="136dp"
-            android:layout_height="46dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/btn_style"
-            android:layout_gravity="center"
-            android:text="@string/sign_up"
-            android:textColor="#fff" />
-    </LinearLayout>
-</ScrollView>
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="136dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_style"
+                android:layout_gravity="center"
+                android:text="@string/sign_up"
+                android:textColor="#fff"
+                android:layout_marginBottom="15dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
 </LinearLayout>

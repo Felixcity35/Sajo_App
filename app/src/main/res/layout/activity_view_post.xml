@@ -8,20 +8,14 @@
     tools:context=".ViewPost"
     android:orientation="vertical">
 
-    <com.google.android.material.appbar.AppBarLayout
+
+    <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/topAppBar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:titleTextColor="@color/colorSurface"
-            app:menu="@menu/top_app_bar"
-            style="@style/Widget.MaterialComponents.Toolbar.Primary"
-            />
-
-    </com.google.android.material.appbar.AppBarLayout>
+        android:layout_height="?attr/actionBarSize"
+        app:menu="@menu/top_app_bar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        app:navigationIcon="@drawable/ic_arrow_back">
+    </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,14 +23,29 @@
         android:orientation="horizontal"
         >
 
-        <ImageView
-            android:id="@+id/org_logo"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:contentDescription="@string/org_dp"
-            android:background="@drawable/circled"
-            app:srcCompat="@drawable/logo3"
-            />
+        <FrameLayout
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+           >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/sajologo"
+                android:foreground="@drawable/stroke"
+                android:contentDescription="@string/orglogo"
+                tools:targetApi="m" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape"
+                android:contentDescription="@string/bglogo" />
+
+        </FrameLayout>
 
         <TextView
             android:id="@+id/org_name"
@@ -57,27 +66,28 @@
             android:layout_marginTop="30dp"
             android:contentDescription="@string/save"
             app:srcCompat="@drawable/ic_like_large" />
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <RatingBar
-            style="@style/Widget.AppCompat.RatingBar.Indicator"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="30dp"
-            android:rating="3.5" />
+            >
+
+            <RatingBar
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="10dp"
+                android:rating="3.5" />
+        </RelativeLayout>
     </LinearLayout>
+
 
     <ImageView
         android:layout_width="410dp"
         android:layout_height="200dp"
         android:contentDescription="@string/org_dp"
-        app:srcCompat="@drawable/display_img"/>
+        app:srcCompat="@drawable/display_img" />
     <TextView
         android:id="@+id/org_des"
         android:layout_width="wrap_content"
@@ -97,10 +107,9 @@
             android:id="@+id/nav_view"
             android:layout_width="278dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_marginStart="62dp"
-            android:layout_marginEnd="0dp"
+            android:layout_marginEnd="62dp"
             android:background="#FFFFFF"
+            android:layout_gravity="bottom|end"
             app:menu="@menu/bottom_nav_menu" />
     </FrameLayout>
 

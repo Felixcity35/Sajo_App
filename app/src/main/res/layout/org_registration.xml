@@ -46,7 +46,9 @@
             android:maxLines="1"
             android:textColor="#161515"
             android:textColorHint="#C4C4C4"
-            android:textSize="17sp" tools:targetApi="o" />
+            android:textSize="17sp" tools:targetApi="o"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
 
         <EditText
             android:id="@+id/org_email"
@@ -59,7 +61,9 @@
             android:maxLines="1"
             android:textColor="#fff"
             android:textColorHint="#C4C4C4"
-            android:textSize="17sp" tools:targetApi="o" />
+            android:textSize="17sp" tools:targetApi="o"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
 
         <EditText
             android:id="@+id/org_password"
@@ -73,17 +77,19 @@
             android:paddingTop="17dp"
             android:textColor="#fff"
             android:textColorHint="#C4C4C4"
-            android:textSize="17sp" tools:targetApi="o" />
+            android:textSize="17sp" tools:targetApi="o"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="108dp"
-            android:layout_margin="10dp"
-            android:padding="15dp"
-            android:background="@drawable/org_description"
-            android:hint="Brief description about what you do."
+            android:layout_height="100dp"
+            android:hint="Brief description of what you do."
+            android:fontFamily="@font/quicksand_light"
             android:textColor="#000000"
-            android:textColorHint="#C4C4C4"/>
+            android:textColorHint="#C4C4C4"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
     </LinearLayout>
 
     <Button
