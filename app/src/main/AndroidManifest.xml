@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CreateNewPostActivity"></activity>
-        <activity android:name=".OrgDashboardActivity" />
+        <activity android:name=".OrganisationDashboardActivity"></activity>
+        <activity android:name=".CreateNewPostActivity" />
         <activity android:name=".organisationActivity" />
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".FeedbackActivity" />
