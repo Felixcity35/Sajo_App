@@ -90,4 +90,8 @@ This is to build their portfolios, as well as their productivity skills.
     <string name="orglogo">orglogo</string>
     <string name="bglogo">bglogo</string>
     <string name="camera">camera</string>
+    <string name="imageview">imageview</string>
+    <string name="details_for_notify">You got accepted to attend NYA Meetup</string>
+    <string name="star">star</string>
+    <string name="brief_description_of_what_you_do">Brief description of what you do.</string>
 </resources>

@@ -38,18 +38,20 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 app:srcCompat="@drawable/circled"
-                android:layout_alignStart="@id/postdetails"/>
+                android:contentDescription="@string/imageview"
+                />
 
             <TextView
                 android:id="@+id/postdetails"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/name_of_organisation_and_brief_description_of_the_post"
-                android:paddingStart="20dp"
+                android:paddingStart="8dp"
                 android:paddingEnd="0dp"
-                android:paddingTop="10dp"
+                android:paddingTop="8dp"
                 android:textSize="17sp"
-                android:fontFamily="@font/quicksand_light"/>
+                android:fontFamily="@font/quicksand_light"
+                android:layout_toEndOf="@id/orglogo"/>
 
         </RelativeLayout>
 

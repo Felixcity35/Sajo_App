@@ -32,7 +32,8 @@
         android:padding="8dp"
         android:textSize="17sp"
         android:fontFamily="@font/quicksand_light"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:textColor="@color/colorOn"/>
     </ScrollView>
 
 

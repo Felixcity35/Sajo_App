@@ -40,17 +40,18 @@
         android:layout_gravity="center"
         android:layout_marginTop="8dp"
         android:layout_marginStart="8dp"
-        android:text="You got accepted to attend NYA Meetup"
+        android:text="@string/details_for_notify"
         android:textSize="17sp"
         android:paddingTop="10dp"
-        android:paddingEnd="8dp"
         android:fontFamily="@font/quicksand_light"/>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_star"
-        android:layout_alignEnd="@id/notifytext"
-        android:paddingTop="15dp"/>
+        android:layout_alignParentEnd="true"
+        android:paddingTop="15dp"
+        android:contentDescription="@string/star"
+        />
 
 </RelativeLayout>
     </androidx.cardview.widget.CardView>
