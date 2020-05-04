@@ -4,6 +4,7 @@ package com.example.sajo.data.model;
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "registrationTable")
@@ -18,6 +19,7 @@ public class registerstudent
         String email ;
       @ColumnInfo(name = "password")
          String password;
+
 
     public registerstudent() {
     }

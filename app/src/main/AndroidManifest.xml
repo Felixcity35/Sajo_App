@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OrganisationDashboardActivity"></activity>
+        <activity
+            android:name=".Studentdash"
+            android:label="@string/title_activity_studentdash"></activity>
+        <activity android:name=".OrganisationDashboardActivity" />
         <activity android:name=".CreateNewPostActivity" />
         <activity android:name=".organisationActivity" />
         <activity android:name=".RegistrationActivity" />

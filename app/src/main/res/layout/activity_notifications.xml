@@ -17,7 +17,6 @@
         style="@style/Widget.MaterialComponents.Toolbar.Primary"
         app:title="Notifications"
         app:titleTextColor="@color/colorSurface"
-        app:subtitleTextAppearance="15dp"
         app:navigationIcon="@drawable/ic_arrow_back">
     </androidx.appcompat.widget.Toolbar>
 

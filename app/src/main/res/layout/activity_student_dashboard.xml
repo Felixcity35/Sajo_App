@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,19 +11,22 @@
     android:fitsSystemWindows="true"
     android:background="#F4F4F4">
 
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        app:menu="@menu/top_app_bar"
-        style="@style/Widget.MaterialComponents.Toolbar.Primary">
+    <!--<androidx.appcompat.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--app:menu="@menu/top_app_bar"-->
+        <!--style="@style/Widget.MaterialComponents.Toolbar.Primary">-->
+    <!--</androidx.appcompat.widget.Toolbar>-->
+    <!---->
 
-    </androidx.appcompat.widget.Toolbar>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/category"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -114,7 +117,7 @@
                 <LinearLayout
                     android:background="@color/colorAccent"
                     android:id="@+id/featured_background"
-                    android:layout_height="300dp"
+                    android:layout_height="200dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginLeft="10dp"
@@ -147,22 +150,18 @@
             </RelativeLayout>
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/posts_recycler"
+                android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
 
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/nav_view"
-                android:layout_width="278dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
-                android:layout_marginEnd="67dp"
-                android:background="#FFFFFF"
-                app:menu="@menu/bottom_nav_menu" />
-</FrameLayout>
-
-</LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu" />
+</RelativeLayout>
